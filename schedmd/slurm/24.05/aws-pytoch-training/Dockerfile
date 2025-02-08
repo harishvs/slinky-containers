@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 
 ################################################################################
-ARG PARENT_IMAGE=763104351884.dkr.ecr.us-west-2.amazonaws.com/pytorch-training:2.5.1-cpu-py311-ubuntu22.04-ec2-v1.0
+ARG PARENT_IMAGE=763104351884.dkr.ecr.us-east-1.amazonaws.com/pytorch-training:2.5.1-gpu-py311-cu124-ubuntu22.04-ec2
 FROM ${PARENT_IMAGE} AS build
 
 ENV SLURM_VERSION=24.05.4
